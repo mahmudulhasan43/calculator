@@ -1,0 +1,64 @@
+<html>
+  <head>
+
+      <title>Simple Calculator</title>
+      <script>
+
+          function calc()
+          {
+             var a;
+             var b;
+             var oper;
+               a = parseFloat(document.getElementById('a').value);
+               b = parseFloat(document.getElementById('b').value);
+
+               oper = document.getElementById('operators').value;
+
+              if(oper == '+')
+              {
+                  document.getElementById('result').value = a + b;
+              }
+
+              if(oper == '-')
+              {
+                  document.getElementById('result').value = a - b;
+              }
+
+
+              if(oper == 'X')
+              {
+                  document.getElementById('result').value = a * b;
+              }
+
+              if(oper == '/')
+              {
+                  document.getElementById('result').value = a / b;
+              }
+
+              if(oper == '%')
+              {
+                  document.getElementById('result').value = a % b;
+              }
+          }
+
+      </script>
+
+  </head>
+  <body>
+
+     Number-1: <input type="text" id="a"/><br/><br/>
+     Number-2: <input type="text" id="b"/><br/><br/>
+
+     <select id="operators">
+        <option value="+">Add</option>
+        <option value="-">Min</option>
+        <option value="/">Div</option>
+        <option value="X">Mul</option>
+        <option value="%">Mod</option>
+    </select>
+
+      <button onclick="calc();">Calculate</button>
+      <input type="text" id="result"/>
+
+  </body>
+</html>
