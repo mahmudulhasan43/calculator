@@ -8,34 +8,34 @@
           {
              var a;
              var b;
-             var oper;
+             var op;
                a = parseFloat(document.getElementById('a').value);
                b = parseFloat(document.getElementById('b').value);
 
-               oper = document.getElementById('operators').value;
+               op = document.getElementById('operators').value;
 
-              if(oper == '+')
+              if(op == '+')
               {
                   document.getElementById('result').value = a + b;
               }
 
-              if(oper == '-')
+              if(op == '-')
               {
                   document.getElementById('result').value = a - b;
               }
 
 
-              if(oper == 'X')
+              if(op == 'X')
               {
                   document.getElementById('result').value = a * b;
               }
 
-              if(oper == '/')
+              if(op == '/')
               {
                   document.getElementById('result').value = a / b;
               }
 
-              if(oper == '%')
+              if(op == '%')
               {
                   document.getElementById('result').value = a % b;
               }
